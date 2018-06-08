@@ -183,22 +183,22 @@ $name = Route::currentRouteName();
 
 $action = Route::currentRouteAction();
 
-Route::get('add/index', function () {
-    return view('welcome cyka');
-});
+//Route::get('add/index', function () {
+//    return view('welcome cyka');
+//});
 
-Route::prefix('add')->group(function () {
-    Route::get('index', function () {
-       $a = "index.php";
-        echo 234;
-        // Переход выглядит таким образом "/admin/users" URL
-    });
-});
-Route::get('add/index', function () {
-    //
-})->name('index');
+//Route::prefix('add')->group(function () {
+//    Route::get('index', function () {
+//       $a = "index.php";
+//        echo 234;
+//        // Переход выглядит таким образом "/admin/users" URL
+//    });
+//});
+//Route::get('add/index', function () {
+//    //
+//})->name('index');
 
-Route::get('add/index', 'AddController@index')->name('profile');
+//Route::get('add/index', 'AddController@index')->name('profile');
 
 //Route::get([
 //    'auth'=>'Auth\AuthController',
@@ -221,7 +221,8 @@ Route::DELETE('post/{post}',       ['as' => 'post.update', 'uses' =>'PostControl
 //$router->resours('post', 'PostController');  // По сути то же само что 8 сторчек выше
 
 
-Route::get('/add',['as'=> 'post', 'uses' => 'AddController@index']);
+//Route::get('/add',['as'=> 'post', 'uses' => 'AddController@index']);
+Route::resource('/add', 'AddController' );
 
 
 Route::get('/product',['as'=> 'post', 'uses' => 'ProductController@index']);
@@ -369,9 +370,16 @@ Route::post('team/show/{id}', 'HomeController@create');/*, function (Request $re
 Route::delete('team/show/{id}', 'HomeController@delete' );
 
 
-Route::get('/account', 'PersonalAccountController@index');
+//Route::get('/account/{id}', 'PersonalAccountController@account');
+//Route::get('/account/{id}','PersonalAccountController@create');
+Route::resource('/account/{id}','PersonalAccountController');
+//Route::resource('/image','ImageController');
+//Route::get('/account/{id}', 'PersonalAccountController@index');
+//Route::post('/account/{id}','PersonalAccountController@store');
 
+//Route::post('/account/{id}', 'PersonalAccountController@update');
 
-Route::get('/account/{id}', 'PersonalAccountController@account');
+//Route::resource('/account','PersonalAccountController@index');
+//Route::get('/account','PersonalAccountController@create');
 
 

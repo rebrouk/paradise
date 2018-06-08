@@ -134,6 +134,7 @@ class HomeController extends Controller
 //        if( $commands = $commands->user) {
 //            continion;
 //        }
+
 //        $commands = $commands->user;
         $teamusers  = TeamUser::all();
         //  сохранение подписчиков которые добавляются в команду

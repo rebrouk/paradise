@@ -31,7 +31,7 @@
         <h2>
             <div align="right">
                 <a href="/logout">Logout</a>
-                <a href="/account">Личный кабинет</a>
+                <a href="/account/{{\Auth::id()}}">Личный кабинет</a>
             </div>
         </h2>
     @endif

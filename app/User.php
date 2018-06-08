@@ -66,7 +66,10 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-
+    public function image()
+    {
+        return $this->belongsTo('App\Image');
+    }
     public function teams()
     {
         return $this->hasMany('App\Team');

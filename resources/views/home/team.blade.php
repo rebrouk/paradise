@@ -359,14 +359,41 @@
 
                     </div>
                 </aside>
+
+    {{--// вывод картинки--}}
+    {{--<head>--}}
+        {{--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />--}}
+        {{--<meta http-equiv="imagetoolbar" content="no" />--}}
+        {{--<title>Запрет отображения панели инструментов для всех изображений</title>--}}
+    {{--</head>--}}
+    {{--<body>--}}
+    {{--<p><img src="/public/images/4.jpg" width="206" height="116" alt="Добро пожаловать" /></p>--}}
+    {{--</body>--}}
+
+
+   {{--// смена заднего плана на картинку--}}
+    {{--<head>--}}
+        {{--<meta charset="utf-8">--}}
+        {{--<title>Фон</title>--}}
+        {{--<style>--}}
+            {{--body {--}}
+                {{--background: #c7c3c5 url(/public/images/4.jpg); /* Цвет фона и путь к файлу */--}}
+                {{--color: #fff9f9; /* Цвет текста */--}}
+            {{--}--}}
+        {{--</style>--}}
+    {{--</head>--}}
+    {{--<body>--}}
+    {{--<p></p>--}}
+    {{--</body>--}}
+
                         {{--// ВЫВОД ИЗЕРОВ КОТОРЫЕ ПОДПИСАНЫ НА ЭТУ КОМАНДУ--}}
-                        {{--@foreach ($commands as $command)--}}
-                            {{--{!!  $command->name . "<br>" !!}--}}
-                            {{--<td class="table-text">--}}
-                                {{--<div>{!!  $command->name  . "<br>" !!}</div>--}}
-        {{--<td class="table-text"><div><a href="http://paradise/account/{{ $command->user->id }}">{{ $command->user->name }}</a></div></td>--}}
-        {{--</td>--}}
-    {{--@endforeach--}}
+                        @foreach ($commands as $command)
+                            {!!  $command->name . "<br>" !!}
+                            <td class="table-text">
+                                <div>{!!  $command->name  . "<br>" !!}</div>
+        <td class="table-text"><div><a href="http://paradise/account/{{ $command->user->id }}">{{ $command->user->name }}</a></div></td>
+        </td>
+    @endforeach
 
                             <head>
                                 <meta charset="utf-8">

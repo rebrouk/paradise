@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        Intervention\Image\ImageServiceProvider::class,
 
 
         /*
@@ -230,6 +231,8 @@ return [
 
         'Form' => Illuminate\Support\Facades\Form::class,
         'Html' => Illuminate\Support\Facades\Html::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+
 
     ],
 
