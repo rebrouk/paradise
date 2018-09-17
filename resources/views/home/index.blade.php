@@ -4,18 +4,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<tbody>
-<tr>
-    <th scope="col" bgcolor="#006c00" width="289">
-        <div align="center"><a href="http://online-letters.ru/" target="_blank"><img
-                        src="http://x-lines.ru/letters/i/cyrillicbasic/1340/1010c6/38/1/4nqpbxsozropdyqtomeabwfo4nh7bqsos8em7wf5.png"
-                        border="0"/></a></div>
+{{--<tr>--}}
+    {{--<th scope="col" bgcolor="#006c00" width="289">--}}
+    {{--<div align="center"><a href="http://online-letters.ru/" target="_blank"><img--}}
+    {{--src="http://x-lines.ru/letters/i/cyrillicbasic/1340/1010c6/38/1/4nqpbxsozropdyqtomeabwfo4nh7bqsos8em7wf5.png"--}}
+    {{--border="0"/></a></div>--}}
 
-    </th>
+    {{--</th>--}}
 
-</tr>
+{{--</tr>--}}
 
-</tbody>
 
 <br>
 <tr>
@@ -38,7 +36,7 @@
 </tr>
 <br>
 <head>
-    <title>Типо Страйкбол</title>
+    <title>Сайт</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
@@ -102,7 +100,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="150">
                     <tbody>
                     <tr>
-                        <th scope="col" background="images/Left_Nav.jpg"><h4>Навигация блять</h4></th>
+                        <th scope="col" background="images/Left_Nav.jpg"><h4>Навигация</h4></th>
                     </tr>
                     </tbody>
                 </table>
@@ -110,7 +108,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="150">
                     <tbody>
                     <tr>
-                        <th scope="col" background="images/Left_Nav.jpg"><h4>Ебанные сайты всякие</h4></th>
+                        <th scope="col" background="images/Left_Nav.jpg"><h4> сайты </h4></th>
                     </tr>
                     <div id="map" style="width: 800px; height: 550px"></div>
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -145,17 +143,17 @@
                     </body>
                     <table border="0" cellpadding="0" cellspacing="0" width="150">
 
-                    {{--<a href="http://paradise/">1 кнопка</a><br>--}}
-                    {{--<a href="http://paradise/">2 кнопка</a><br>--}}
-                    {{--<a href="http://paradise/">3 кнопка</a><br>--}}
-                    <br>
-                    <div align="left"><a href="http://www.addyoururl.com">:: 1 кнопка :: </a></div>
-                    <br>
-                    <div align="left"><a href="http://www.addyoururl.com">:: 2 кнопка :: </a></div>
-                    <br>
-                    <div align="left"><a href="http://paradise/create">:: СОЗДАТЬ КОМАНДУ :: </a></div>
+                        {{--<a href="http://paradise/">1 кнопка</a><br>--}}
+                        {{--<a href="http://paradise/">2 кнопка</a><br>--}}
+                        {{--<a href="http://paradise/">3 кнопка</a><br>--}}
+                        <br>
+                        <div align="left"><a href="http://www.addyoururl.com">:: 1 кнопка :: </a></div>
+                        <br>
+                        <div align="left"><a href="http://www.addyoururl.com">:: 2 кнопка :: </a></div>
+                        <br>
+                        <div align="left"><a href="http://paradise/create">:: СОЗДАТЬ КОМАНДУ :: </a></div>
                     </table>
-                        <h2>Описание эбана врот</h2>
+                    <h2>Описание</h2>
                     <head>
                         <meta charset="utf-8">
                         <title>Рамка вокруг текста</title>
@@ -271,23 +269,23 @@
                                     </td>
                                 </tr>
                             @endforeach
-                                @foreach ($tasksNear as $task)
-                                    <tr>
+                            @foreach ($tasksNear as $task)
+                                <tr>
 
-                                        <td class="table-text">
-                                            <div>{{ $task->text }}</div>
-                                        </td>
-                                        <td class="table-text">
-                                            <div>{{ $task->team }}</div>
-                                        </td>
+                                    <td class="table-text">
+                                        <div>{{ $task->text }}</div>
+                                    </td>
+                                    <td class="table-text">
+                                        <div>{{ $task->team }}</div>
+                                    </td>
 
-                                        <!-- Task Delete Button -->
-                                        <td>
-                                            <a href="http://paradise/team/show/{{ $task->id }}">{{ $task->title }}
-                                                Перейти</a><br>
-                                        </td>
-                                    </tr>
-                                @endforeach
+                                    <!-- Task Delete Button -->
+                                    <td>
+                                        <a href="http://paradise/team/show/{{ $task->id }}">{{ $task->title }}
+                                            Перейти</a><br>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </table>
                         <br>
                         <!-- weather widget start --><a target="_blank"
